@@ -1,0 +1,90 @@
+legend{
+  background-color: orange;
+
+  position: relative;
+  left: -40px;
+  width: 200px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 55%;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  background-image: url(https://i.pinimg.com/736x/dc/47/4a/dc474aefae2949e7fbd9e6debc0f14a5.jpg);
+  color: white;
+  font-size: 1.2em;
+  border-radius: 15px;
+box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+label, input {
+  margin: 10px 0;
+  display: block;
+}
+
+.carddet {
+  display: flex;
+   justify-content: space-between;
+  width: 100%;
+}
+#cvv{
+  width: 50px;
+}
+input{
+  background-color: rgb(190, 191, 233);
+}
+
+.b1[type="submit"] {
+  margin-top: 20px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+  /* изменения для мобильных */
+  @media only screen and (max-width: 680px) {
+    /* изменение размеров легенды */
+    legend {
+      width: auto;
+      left: auto;
+    }
+    /* изменение размеров формы */
+    form {
+     width: 80%;
+      margin: 10px;
+      padding: 10px;
+      font-size: 20px;
+    }
+    /* изменение размеров кнопки */
+    .b1[type="submit"] {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    /* изменение размеров input-ов */
+    input {
+      width: 90%;
+      font-size: 12px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    /* изменение отступов */
+    .carddet {
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+    }
+    label, input {
+      margin: 5px 0;
+    }
+  }
